@@ -90,6 +90,16 @@ void Node::SetParent(Node* n, bool pos)
 	parent = n;
 	parentPosition = pos;
 }
+
+Node* Node::GetLeft()
+{
+	return left;
+}
+
+Node* Node::GetRight()
+{
+	return right;
+}
 /*
 * reassigns children of the parent to complete before freeing this node. Returns a pointer to the new parent of the entire tree, if there
 * is one. Otherwise returns NULL

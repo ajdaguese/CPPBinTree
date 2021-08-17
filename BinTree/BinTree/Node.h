@@ -21,6 +21,8 @@ public:
 	void SetLeft(Node* n);
 	void SetRight(Node* n);
 	void SetParent(Node* n, bool pos);
+	Node* GetLeft();
+	Node* GetRight();
 	Node* Del();
 };
 

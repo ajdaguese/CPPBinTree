@@ -3,10 +3,9 @@
 class BinTree
 {
 private:
-	Node parentNode;
+	Node* parentNode;
 public:
-	BinTree();
-	BinTree(Node parent);
-	void AddNode(Node newNode);
-	void DeleteNode(int dataToDelete);
+	BinTree(int parentData);
+	void AddNode(int data);
+	bool DeleteNode(int dataToDelete);
 };
